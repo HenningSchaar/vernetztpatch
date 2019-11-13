@@ -207,7 +207,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 225.0, 184.0, 39.0, 22.0 ],
-					"text" : "4000."
+					"text" : "5000."
 				}
 
 			}
@@ -215,11 +215,11 @@
 				"box" : 				{
 					"id" : "obj-74",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 173.0, 209.5, 71.0, 22.0 ],
-					"text" : "line~ 0."
+					"patching_rect" : [ 173.0, 209.5, 58.0, 22.0 ],
+					"text" : "curve~ 0."
 				}
 
 			}
