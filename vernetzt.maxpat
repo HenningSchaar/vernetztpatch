@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 910.0, 278.0, 640.0, 619.0 ],
+		"rect" : [ 1140.0, 172.0, 640.0, 619.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,18 +38,6 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-110",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 476.0, 454.0, 34.0, 22.0 ],
-					"text" : "line~"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-109",
 					"maxclass" : "message",
@@ -81,7 +69,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 404.0, 34.0, 219.0, 36.0 ],
-					"text" : "IC 28405 0.576",
+					"text" : "RB 61181 0.537",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -129,7 +117,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 463.5, 102.0, 100.0, 22.0 ],
-					"text" : "loadmess 30000."
+					"text" : "loadmess 40000."
 				}
 
 			}
@@ -202,7 +190,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 254.75, 292.0, 45.0, 22.0 ],
-					"text" : "30000."
+					"text" : "40000."
 				}
 
 			}
@@ -214,7 +202,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 68.0, 292.0, 45.0, 22.0 ],
-					"text" : "30000."
+					"text" : "40000."
 				}
 
 			}
