@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 463.0, 245.0, 640.0, 768.0 ],
+		"rect" : [ 578.0, 250.0, 640.0, 768.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -101,8 +101,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 29.0, 148.0, 30.0, 22.0 ],
-									"text" : "*~ 2"
+									"patching_rect" : [ 29.0, 148.0, 40.0, 22.0 ],
+									"text" : "*~ 1.5"
 								}
 
 							}
@@ -305,7 +305,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "multichannelsignal", "int" ],
+					"outlettype" : [ "multichannelsignal", "" ],
 					"patching_rect" : [ 489.0, 341.0, 66.0, 22.0 ],
 					"text" : "trainPlayer",
 					"varname" : "trainPlayer[7]"
@@ -318,7 +318,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "multichannelsignal", "int" ],
+					"outlettype" : [ "multichannelsignal", "" ],
 					"patching_rect" : [ 421.0, 341.0, 66.0, 22.0 ],
 					"text" : "trainPlayer",
 					"varname" : "trainPlayer[6]"
@@ -331,7 +331,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "multichannelsignal", "int" ],
+					"outlettype" : [ "multichannelsignal", "" ],
 					"patching_rect" : [ 353.0, 341.0, 66.0, 22.0 ],
 					"text" : "trainPlayer",
 					"varname" : "trainPlayer[5]"
@@ -344,7 +344,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "multichannelsignal", "int" ],
+					"outlettype" : [ "multichannelsignal", "" ],
 					"patching_rect" : [ 285.0, 341.0, 66.0, 22.0 ],
 					"text" : "trainPlayer",
 					"varname" : "trainPlayer[4]"
@@ -503,7 +503,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 27.0, 212.0, 226.833333333333314, 22.0 ],
-									"text" : "1772923474 ICE103 ICE 0.359689"
+									"text" : "-756389672 HzL26543 HzL 0.005"
 								}
 
 							}
@@ -515,7 +515,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 27.0, 353.0, 439.833333333333258, 22.0 ],
-									"text" : "\"1772923474 ICE103 ICE 0.3596890490453401\""
+									"text" : "\"-756389672 HzL26543 HzL 0.005\""
 								}
 
 							}
@@ -838,7 +838,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "multichannelsignal", "int" ],
+					"outlettype" : [ "multichannelsignal", "" ],
 					"patching_rect" : [ 217.0, 341.0, 66.0, 22.0 ],
 					"text" : "trainPlayer",
 					"varname" : "trainPlayer[3]"
@@ -851,7 +851,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "multichannelsignal", "int" ],
+					"outlettype" : [ "multichannelsignal", "" ],
 					"patching_rect" : [ 149.0, 341.0, 66.0, 22.0 ],
 					"text" : "trainPlayer",
 					"varname" : "trainPlayer[2]"
@@ -864,7 +864,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "multichannelsignal", "int" ],
+					"outlettype" : [ "multichannelsignal", "" ],
 					"patching_rect" : [ 81.0, 341.0, 66.0, 22.0 ],
 					"text" : "trainPlayer",
 					"varname" : "trainPlayer[1]"
@@ -923,7 +923,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "multichannelsignal", "int" ],
+					"outlettype" : [ "multichannelsignal", "" ],
 					"patching_rect" : [ 13.0, 341.0, 66.0, 22.0 ],
 					"text" : "trainPlayer",
 					"varname" : "trainPlayer"
@@ -986,7 +986,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 404.0, 34.0, 219.0, 36.0 ],
-					"text" : "ICE103",
+					"text" : "HzL26543",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1558,14 +1558,21 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "fade.maxpat",
+				"name" : "panner.maxpat",
 				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "panner.maxpat",
+				"name" : "fileplayer.maxpat",
+				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fade.maxpat",
 				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
