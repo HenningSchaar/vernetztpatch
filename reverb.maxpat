@@ -39,12 +39,24 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-8",
+					"comment" : "Daisy chain for position data",
+					"id" : "obj-15",
+					"index" : 2,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 382.0, 318.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 326.0, 55.0, 55.0, 22.0 ],
+					"patching_rect" : [ 326.0, 64.0, 55.0, 22.0 ],
 					"text" : "zl.slice 1"
 				}
 
@@ -373,7 +385,17 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
+					"destination" : [ "obj-15", 0 ],
+					"midpoints" : [ 335.5, 53.0, 391.5, 53.0 ],
+					"order" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -511,7 +533,7 @@
 					"destination" : [ "obj-12", 1 ],
 					"midpoints" : [ 335.5, 210.5, 204.5, 210.5 ],
 					"order" : 1,
-					"source" : [ "obj-8", 0 ]
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -520,7 +542,7 @@
 					"destination" : [ "obj-9", 0 ],
 					"midpoints" : [ 335.5, 131.0, 335.5, 131.0 ],
 					"order" : 0,
-					"source" : [ "obj-8", 0 ]
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
