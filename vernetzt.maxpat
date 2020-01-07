@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 578.0, 250.0, 640.0, 768.0 ],
+		"rect" : [ 772.0, 454.0, 640.0, 768.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,29 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 201.0, 215.0, 95.0, 22.0 ],
+					"text" : "s reverbSettings"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 201.0, 186.0, 173.0, 22.0 ],
+					"text" : "loadmess 54 100 100 45 100 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -55,7 +78,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 103.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 711.0, 563.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -101,8 +124,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 29.0, 148.0, 40.0, 22.0 ],
-									"text" : "*~ 1.5"
+									"patching_rect" : [ 29.0, 148.0, 30.0, 22.0 ],
+									"text" : "*~ 1"
 								}
 
 							}
@@ -503,7 +526,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 27.0, 212.0, 226.833333333333314, 22.0 ],
-									"text" : "-756389672 HzL26543 HzL 0.005"
+									"text" : "1387247907 RE19230 RE 0.758758"
 								}
 
 							}
@@ -515,7 +538,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 27.0, 353.0, 439.833333333333258, 22.0 ],
-									"text" : "\"-756389672 HzL26543 HzL 0.005\""
+									"text" : "\"1387247907 RE19230 RE 0.758757673231122\""
 								}
 
 							}
@@ -986,7 +1009,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 404.0, 34.0, 219.0, 36.0 ],
-					"text" : "HzL26543",
+					"text" : "RE19230",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1027,12 +1050,12 @@
 					"patching_rect" : [ 13.0, 618.0, 300.0, 59.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "mc.live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "mc.live.gain~"
+							"parameter_longname" : "mc.live.gain~",
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "mc.live.gain~"
 						}
 
 					}
@@ -1356,6 +1379,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-93", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
@@ -1573,6 +1603,27 @@
 			}
 , 			{
 				"name" : "fade.maxpat",
+				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "reverb.maxpat",
+				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "yafr2.maxpat",
+				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
+				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "highpass.maxpat",
 				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
