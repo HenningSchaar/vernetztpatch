@@ -117,8 +117,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "float" ],
-					"patching_rect" : [ 127.0, 107.0, 39.0, 22.0 ],
-					"text" : "t f 50."
+					"patching_rect" : [ 127.0, 107.0, 45.0, 22.0 ],
+					"text" : "t f 150."
 				}
 
 			}
@@ -129,8 +129,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "float" ],
-					"patching_rect" : [ 72.5, 157.0, 39.0, 22.0 ],
-					"text" : "t f 50."
+					"patching_rect" : [ 72.5, 157.0, 45.0, 22.0 ],
+					"text" : "t f 100."
 				}
 
 			}
@@ -453,7 +453,7 @@
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u742011561"
+									"varname" : "u765004824"
 								}
 
 							}
