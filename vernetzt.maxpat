@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 1,
+			"minor" : 0,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -66,7 +66,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-41",
-					"items" : [ "AU DLS Synth 1", ",", "Teensy MIDI", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2" ],
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
@@ -113,8 +113,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 1,
+							"minor" : 0,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -336,8 +336,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 1,
+							"minor" : 0,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -685,8 +685,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 1,
+							"minor" : 0,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1304,12 +1304,12 @@
 					"patching_rect" : [ 13.0, 618.0, 300.0, 59.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmin" : -70.0,
+							"parameter_longname" : "mc.live.gain~",
 							"parameter_mmax" : 6.0,
 							"parameter_shortname" : "mc.live.gain~",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
-							"parameter_mmin" : -70.0,
-							"parameter_longname" : "mc.live.gain~"
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1328,14 +1328,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 1,
+							"minor" : 0,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 103.0, 104.0, 779.0, 480.0 ],
+						"rect" : [ 103.0, 104.0, 667.0, 232.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1362,14 +1362,50 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 208.0, 171.0, 107.0, 22.0 ],
+									"text" : "s gabriel.bufferinfo"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 9,
+									"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "", "int" ],
+									"patching_rect" : [ 145.0, 100.0, 103.0, 22.0 ],
+									"text" : "info~ gabriel"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "bang" ],
+									"patching_rect" : [ 15.0, 19.0, 149.0, 22.0 ],
+									"text" : "buffer~ gabriel gabriel.wav"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 581.75, 161.0, 140.0, 22.0 ],
-									"text" : "s distanzmusik.bufferinfo"
+									"patching_rect" : [ 526.0, 171.0, 103.0, 22.0 ],
+									"text" : "s leonie.bufferinfo"
 								}
 
 							}
@@ -1379,8 +1415,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 328.75, 161.0, 156.0, 22.0 ],
-									"text" : "s musicforairports.bufferinfo"
+									"patching_rect" : [ 365.5, 171.0, 92.0, 22.0 ],
+									"text" : "s julia.bufferinfo"
 								}
 
 							}
@@ -1393,7 +1429,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 570.0, 9.0, 30.0, 30.0 ]
+									"patching_rect" : [ 518.0, 19.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -1404,8 +1440,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 9,
 									"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "", "int" ],
-									"patching_rect" : [ 250.0, 90.0, 124.0, 22.0 ],
-									"text" : "info~ musicforairports"
+									"patching_rect" : [ 302.5, 100.0, 103.0, 22.0 ],
+									"text" : "info~ julia"
 								}
 
 							}
@@ -1416,8 +1452,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 9,
 									"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "", "int" ],
-									"patching_rect" : [ 515.0, 90.0, 108.0, 22.0 ],
-									"text" : "info~ distanzmusik"
+									"patching_rect" : [ 463.0, 100.0, 103.0, 22.0 ],
+									"text" : "info~ leonie"
 								}
 
 							}
@@ -1428,8 +1464,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 21.0, 9.0, 248.0, 22.0 ],
-									"text" : "buffer~ musicforairports musicforairports.wav"
+									"patching_rect" : [ 201.5, 19.0, 120.0, 22.0 ],
+									"text" : "buffer~ julia julia.wav"
 								}
 
 							}
@@ -1440,8 +1476,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 318.0, 9.0, 216.0, 22.0 ],
-									"text" : "buffer~ distanzmusik distanzmusik.wav"
+									"patching_rect" : [ 341.0, 19.0, 141.0, 22.0 ],
+									"text" : "buffer~ leonie leonie.wav"
 								}
 
 							}
@@ -1476,6 +1512,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-4", 6 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"order" : 0,
 									"source" : [ "obj-5", 0 ]
@@ -1487,6 +1530,21 @@
 									"destination" : [ "obj-35", 0 ],
 									"order" : 1,
 									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"order" : 2,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-6", 1 ]
 								}
 
 							}
@@ -1892,35 +1950,35 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "trainPlayer.maxpat",
-				"bootpath" : "~/Documents/vernetztpatch",
+				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "panner.maxpat",
-				"bootpath" : "~/Documents/vernetztpatch",
+				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fileplayer.maxpat",
-				"bootpath" : "~/Documents/vernetztpatch",
+				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fade.maxpat",
-				"bootpath" : "~/Documents/vernetztpatch",
+				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "reverb.maxpat",
-				"bootpath" : "~/Documents/vernetztpatch",
+				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1928,20 +1986,20 @@
 , 			{
 				"name" : "yafr2.maxpat",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
-				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
+				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "highpass.maxpat",
-				"bootpath" : "~/Documents/vernetztpatch",
+				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ledController.maxpat",
-				"bootpath" : "~/Documents/vernetztpatch",
+				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

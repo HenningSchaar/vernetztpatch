@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 6,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -316,7 +316,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 127.0, 259.600006000000008, 75.0, 22.0 ],
+					"patching_rect" : [ 127.0, 259.600006103515625, 75.0, 22.0 ],
 					"text" : "append 0. 1."
 				}
 
@@ -389,7 +389,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 6,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -453,7 +453,7 @@
 									}
 ,
 									"text" : "autopattr",
-									"varname" : "u765004824"
+									"varname" : "u468007061"
 								}
 
 							}
