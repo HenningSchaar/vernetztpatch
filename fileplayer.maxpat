@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 6,
+			"minor" : 1,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1738.0, 742.0, 640.0, 423.0 ],
+		"rect" : [ 694.0, 316.0, 640.0, 536.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,7 +56,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 116.0, 346.0, 22.0, 22.0 ],
+					"patching_rect" : [ 92.0, 335.0, 22.0, 22.0 ],
 					"text" : "t 0"
 				}
 
@@ -211,9 +211,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
-					"outlettype" : [ "multichannelsignal", "", "" ],
-					"patching_rect" : [ 24.0, 305.0, 203.0, 22.0 ],
-					"text" : "mc.play~ #1 @chans 1"
+					"outlettype" : [ "signal", "signal", "bang" ],
+					"patching_rect" : [ 24.0, 305.0, 87.0, 22.0 ],
+					"text" : "play~ #1  2"
 				}
 
 			}
@@ -258,6 +258,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-33", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-91", 0 ],
 					"source" : [ "obj-33", 1 ]
 				}
 
@@ -362,7 +369,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"midpoints" : [ 125.5, 370.0, 281.5, 370.0 ],
+					"midpoints" : [ 101.5, 370.0, 281.5, 370.0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 

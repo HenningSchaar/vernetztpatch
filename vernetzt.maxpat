@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 229.0, 827.0, 54.0, 22.0 ],
+					"text" : "chordsel"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-44",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -66,7 +77,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-41",
-					"items" : [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "Teensy MIDI", ",", "from Max 1", ",", "from Max 2" ],
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
@@ -113,8 +124,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 1,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -336,14 +347,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 1,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 711.0, 563.0, 640.0, 480.0 ],
+						"rect" : [ 917.0, 398.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -389,8 +400,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 29.0, 148.0, 30.0, 22.0 ],
-									"text" : "*~ 1"
+									"patching_rect" : [ 29.0, 148.0, 34.0, 22.0 ],
+									"text" : "*~ 0."
 								}
 
 							}
@@ -646,7 +657,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 13.0, 827.0, 104.0, 22.0 ],
-					"text" : "mc.dac~ 1 2 3 4 9"
+					"text" : "mc.dac~ 1 2 6 5 4"
 				}
 
 			}
@@ -685,8 +696,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 1,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -791,7 +802,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 27.0, 212.0, 226.833333333333314, 22.0 ],
-									"text" : "1318738873 RE4499 RE 0.276666"
+									"text" : "1203929540 RE24422 RE 0.724501"
 								}
 
 							}
@@ -803,7 +814,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 27.0, 353.0, 439.833333333333258, 22.0 ],
-									"text" : "\"1318738873 RE4499 RE 0.2766662804844683\""
+									"text" : "\"1203929540 RE24422 RE 0.7245007483073068\""
 								}
 
 							}
@@ -1263,7 +1274,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 404.0, 34.0, 219.0, 36.0 ],
-					"text" : "RE4499",
+					"text" : "RE24422",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1304,12 +1315,12 @@
 					"patching_rect" : [ 13.0, 618.0, 300.0, 59.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : -70.0,
-							"parameter_longname" : "mc.live.gain~",
 							"parameter_mmax" : 6.0,
 							"parameter_shortname" : "mc.live.gain~",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmin" : -70.0,
+							"parameter_longname" : "mc.live.gain~"
 						}
 
 					}
@@ -1328,8 +1339,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 1,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1362,7 +1373,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
@@ -1950,35 +1960,35 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "trainPlayer.maxpat",
-				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
+				"bootpath" : "~/Documents/vernetztpatch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "panner.maxpat",
-				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
+				"bootpath" : "~/Documents/vernetztpatch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fileplayer.maxpat",
-				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
+				"bootpath" : "~/Documents/vernetztpatch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fade.maxpat",
-				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
+				"bootpath" : "~/Documents/vernetztpatch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "reverb.maxpat",
-				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
+				"bootpath" : "~/Documents/vernetztpatch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1986,20 +1996,34 @@
 , 			{
 				"name" : "yafr2.maxpat",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
-				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
+				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "highpass.maxpat",
-				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
+				"bootpath" : "~/Documents/vernetztpatch",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "chordgrain.maxpat",
+				"bootpath" : "~/Documents/vernetztpatch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ledController.maxpat",
-				"bootpath" : "~/Documents/Studium/Bachelor/Code/vernetztpatch",
+				"bootpath" : "~/Documents/vernetztpatch",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "chordsel.maxpat",
+				"bootpath" : "~/Documents/vernetztpatch",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
