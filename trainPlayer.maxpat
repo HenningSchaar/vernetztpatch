@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 236.0, 358.0, 1650.0, 674.0 ],
+		"rect" : [ 236.0, 358.0, 1650.0, 760.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,42 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 254.0, 321.0, 121.0, 22.0 ],
+					"text" : "chordgrain leonie 0.5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 141.0, 321.0, 110.0, 22.0 ],
+					"text" : "chordgrain julia 0.7"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 13.0, 321.0, 125.0, 22.0 ],
+					"text" : "chordgrain gabriel 0.9"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "newobj",
@@ -445,7 +481,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 310.5, 368.0, 93.0, 22.0 ],
+					"patching_rect" : [ 310.5, 377.0, 93.0, 22.0 ],
 					"text" : "r reverbSettings"
 				}
 
@@ -457,7 +493,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "" ],
-					"patching_rect" : [ 13.0, 392.0, 614.0, 22.0 ],
+					"patching_rect" : [ 13.0, 401.0, 614.0, 22.0 ],
 					"text" : "reverb"
 				}
 
@@ -469,7 +505,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 454.0, 477.0, 102.0, 22.0 ],
+					"patching_rect" : [ 454.0, 523.0, 102.0, 22.0 ],
 					"text" : "r #0.playStatus"
 				}
 
@@ -481,7 +517,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1457.0, 192.0, 22.0, 22.0 ],
+					"patching_rect" : [ 1203.0, 192.0, 22.0, 22.0 ],
 					"text" : "t b"
 				}
 
@@ -775,7 +811,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 454.0, 510.0, 30.0, 30.0 ]
+					"patching_rect" : [ 454.0, 556.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -798,7 +834,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 13.0, 444.0, 1209.0, 22.0 ],
+					"patching_rect" : [ 13.0, 453.0, 1209.0, 22.0 ],
 					"text" : "panner",
 					"varname" : "panner"
 				}
@@ -836,7 +872,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 510.0, 30.0, 30.0 ]
+					"patching_rect" : [ 13.0, 556.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -1015,8 +1051,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
-					"midpoints" : [ 263.5, 344.0, 22.5, 344.0 ],
+					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -1165,8 +1200,23 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"midpoints" : [ 150.5, 375.0, 22.5, 375.0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
-					"midpoints" : [ 617.5, 107.5, 1466.5, 107.5 ],
+					"midpoints" : [ 617.5, 107.5, 1212.5, 107.5 ],
 					"order" : 0,
 					"source" : [ "obj-23", 0 ]
 				}
@@ -1183,6 +1233,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
+					"midpoints" : [ 263.5, 375.0, 22.5, 375.0 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -1197,8 +1255,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
-					"midpoints" : [ 150.5, 344.0, 22.5, 344.0 ],
+					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-30", 0 ]
 				}
 
